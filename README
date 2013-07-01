@@ -1,0 +1,10 @@
+
+Sorts all posts of community by likes and shares
+
+main.php - get all necessary data using VK API. Change $ID for community ID and $end to id of the latest post. creates "data" and "good" files.
+
+data - all posts sorted by likes then by shares. Includes post ID, post text, post likes/shares, and post date.
+
+good - includes all "good" post IDs. After each iteration main.php will not take time to get info from empty post.
+
+check.cpp - reads data file and creates html files with simple webpage.

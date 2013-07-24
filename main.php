@@ -1,5 +1,15 @@
 <?php
-
+ class Post { 
+           var $likes; 
+           var $shares; 
+           var $txt, $data; 
+           var $id; 
+           static function cmp ($a, $b) { 
+               if ($a->likes == $b->likes)  
+                  return ($a->shares < $b->shares) ? +1 : -1; 
+              return ($a->likes < $b->likes) ? +1 : -1; 
+         } 
+ } 
  function get_url($url)
  {
          $ch = curl_init();
